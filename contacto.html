@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Turismo PR | Contactos</title>
+            <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pagina-contacto">
+
+    <header>
+        <h1>Contáctanos</h1>
+            <h2>Comunícate con nosotros</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                         <li><a href="contenido.html">Contenido</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                 <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor">
+        <form action="mailto:cont@turismopr.com" method="post" enctype="text/plain">
+            
+            <div class="campo-formulario">
+                <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="info">Información</option>
+                            <option value="sugerencia">Sugerencia</option>
+                             <option value="queja">Queja</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+
+            <div class="campo-formulario">
+                <button type="submit">Enviar</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>Conoce la isla del encanto con nosotros</p>
+            <p><a href="mailto:cont@turismopr.com">cont@turismopr.com</a></p>
+    </footer>
+
+</body>
+</html>
